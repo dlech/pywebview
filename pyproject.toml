@@ -29,7 +29,7 @@ classifiers = [
     "Topic :: Software Development :: User Interfaces",
 ]
 dependencies = [
-    "pythonnet;sys_platform=='win32'",
+    "pythonnet;sys_platform=='win32' and platform_machine!='ARM64'",
     "pyobjc-core;sys_platform=='darwin'",
     "pyobjc-framework-Cocoa;sys_platform=='darwin'",
     "pyobjc-framework-Quartz;sys_platform=='darwin'",
